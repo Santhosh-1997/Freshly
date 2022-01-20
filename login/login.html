@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshly-Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/login/phone.css">
     <style>
 
 
@@ -16,26 +20,34 @@
 
 <body>
 
-    <div class="nav">
+    <div class="nav ">
+        <div class="v-hidden h-nav" id="nav">
 
-        <div class="left">
-            <div><a href="">Plans $ Menu</a> </div>
-            <div><a href="https://www.freshly.com/why-freshly">About</a></div>
-            <div><a href="">For Business</a></div>
-            <div><a href="">Gifts</a></div>
+
+            <div class="left v-hidden">
+                <div><a href="">Plans & Menu</a> </div>
+                <div><a href="https://www.freshly.com/why-freshly">About</a></div>
+                <div><a href="">For Business</a></div>
+                <div><a href="">Gifts</a></div>
+            </div>
+            <div class="img" onclick="homePage()">
+                <a href="../home-page/home.html"><img
+                        src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                        alt="image"></a>
+            </div>
+            <div class="left v-hidden" id="right">
+                <div><a href="">Get $30</a></div>
+                <div><a href="">Help</a></div>
+                <div><a href="">Log in</a></div>
+                <button class="btn" onclick="window.location.href='signup.html'">Sign Up </button>
+
+            </div>
         </div>
-        <div class="img" onclick="homePage()">
-            <a href="../home-page/home.html"><img
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt="image"></a>
-        </div>
-        <div class="left">
-            <div><a href="">Get $30</a></div>
-            <div><a href="">Help</a></div>
-            <div><a href="">Log in</a></div>
-            <button class="btn" onclick="window.location.href='signup.html'">Sign Up </button>
-
-
+        <button class="btn  btn-r" onclick="window.location.href='signup/signup.html'">Sign Up </button>
+        <div class="burger" onclick="hidenNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
     <div id="box">
@@ -165,7 +177,13 @@
 
 </html>
 <script>
-    function homePage() {
-        window.location.href = "home.html"
+    var left = document.querySelector(".left")
+    var right = document.querySelector("#right")
+    var div = document.querySelector("#nav")
+    function hidenNav() {
+        left.classList.toggle("v-hidden")
+        right.classList.toggle("v-hidden")
+        div.classList.toggle("v-hidden")
+        div.classList.toggle("h-nav")
     }
 </script>
