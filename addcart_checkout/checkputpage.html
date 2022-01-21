@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>check out </title>
+</head>
+<style>
+    *{
+        font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
+    }
+    body{
+        background-color: rgb(255,253,247);
+    }
+    .maincontainer{
+        width: 85%;
+       margin: auto;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       grid-gap: 20px;
+    }
+    form{
+        
+        background-color: white;
+        display: grid;
+        padding: 50px;
+        grid-gap: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        grid-template-areas: 
+        "h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2"
+        "f f f f f f l l l l l l"
+        "f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1 f1"
+        "a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1 a1"
+        "a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2 a2"
+        "c c c c c c s s s s z z"
+        "p p p p p p p p p p p p"
+        "e e e e e e e e e e e e"
+        "n n n n n n n n n n n n"
+    }
+    .firstname{
+        grid-area: f;
+    }
+    .lastname{
+        grid-area: l;
+    }
+    .fullname{
+        grid-area: f1;
+    }
+    .addressline1{
+        grid-area: a1;
+    }
+    .addressline2{
+        grid-area: a2;
+    }
+    .city{
+        grid-area: c;
+    }
+    .state{
+        grid-area: s;
+    }
+    .zip{
+        grid-area: z;
+    }
+    .phone{
+        grid-area: p;
+    }
+    .email{
+        grid-area: e;
+    }
+    .next{
+        grid-area: n;
+    }
+    h2{
+        grid-area: h2;
+    }
+    input{
+        width: 100%;
+        height: 25px;
+        border-radius: none;
+        
+    }
+    h4{
+        margin: 0px;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    #check{
+        width: 10px;
+        height: 10px;
+    }
+    #next{
+       height: 40px;
+       background-color: rgb(42,109,255);
+       color: white;
+       font-weight: bold;
+       font-size: 19px;
+       border: none;
+    }
+    h1{
+        margin-left: 200px;
+    }
+    .box{
+        background-color: white;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 30px;
+    }
+    .flex>h4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #deliv{
+        margin-bottom: 15px;
+    }
+    select{
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    #line{
+       border-bottom: 1px solid gray;
+    }
+    .line{
+        border-bottom: 1px solid gray;
+    }
+    .container2{
+        width: 80%;
+    }
+    #newchange{
+        margin-top: 15px;
+        
+    }
+     /* addedd data style */
+
+     img{
+         width: 100px;
+        margin-right: 30px;
+     }
+     .box2>div{
+         display: flex;
+         border-bottom: 1px solid gray;
+         padding: 10px;
+     }
+     
+    @media only screen and (min-width:0px) and (max-width:320px){
+        .maincontainer{
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .container2{
+        width: 100%;
+       }
+    }
+    @media only screen and (min-width:321px) and (max-width:720px){
+        .maincontainer{
+            width: 100%;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .container2{
+        width: 100%;
+        }
+    }
+</style>
+<body>
+    <h1>Check out</h1>
+    <div class="maincontainer">
+    <div class="container">
+     <form action="">
+        <h2>Delivery Address</h2>
+        <div class="firstname">
+            <h4>First Name</h4>
+            <input type="text" id="firstname">
+        </div>
+        <div class="lastname">
+            <h4>Last Name</h4>
+            <input type="text" id="lastname">
+        </div>
+        <div class="fullname">
+            <h4>Full Name for Delivery Address</h4>
+            <input type="text" id="fullname">
+        </div>
+        <div class="addressline1">
+            <h4>Address Line 1</h4>
+            <input type="text" id="addressline1">
+        </div>
+        <div class="addressline2">
+            <h4>Address Line 2(optional)</h4>
+            <input type="text" id="addressline2">
+        </div>
+        <div class="city">
+            <h4>City</h4>
+            <input type="text" id="city">
+        </div>
+        <div class="state">
+            <h4>State</h4>
+            <input type="text" id="state">
+        </div>
+        <div class="zip">
+            <div class="flex">
+            <h4>Zip</h4>
+            <a href="">Change</a>
+            </div>
+            <input type="number" id="zip">
+        </div>
+        <div class="phone">
+            <h4>Phone</h4>
+            <input type="number" id="phone">
+            <input type="checkbox" name="" id="check" >
+            <label for="check">Receive SMS text message updates on my orders</label>
+        </div>
+        <div class="email">
+            <h4>Email (We require your email to send you receipts and order updates)</h4>
+            <input type="email" id="email">
+        </div>
+        <div class="next">
+            <div class="flex newchange">
+            <h4>Today's Total</h4>
+            <!-- <h4>$58.14</h4> -->
+            </div>
+            <div class="button" id="newchange">
+                <input type="submit" id="next">
+            </div>
+        </div>
+    </form>
+    </div>
+
+    <div class="container2">
+        <h2>Order Summary</h2>
+        <div class="box">
+            <div >
+                <a href="" id="">+ Add Promo Code</a>
+            </div>
+            <div id="line">
+                <h4 id="newchange">Delivery Date</h4>
+                <select name="" id="newchange">
+                    <option value="">Thursday,February 3</option>
+                    <option value="">Friday, February 4</option>
+                    <option value="">Thursday, February 10</option>
+                    <option value="">Friday, February 11</option>
+                </select>
+            </div>
+            <div class="flex line items">
+                <!-- <p>4 meals</p> -->
+                <!-- <h4>$47.16</h4> -->
+            </div>
+            <div class="flex line">
+                <p>shipping</p>
+                <h4>$6.99</h4>
+            </div>
+            <div class="flex line">
+                <p>Tax</p>
+                <h4>$3.99</h4>
+            </div>
+            <div class="flex total">
+                <h4>Total</h4>
+                <!-- <h4>$58.14</h4> -->
+            </div>
+        </div>
+        <div class="box2">
+            <h1>My Meals</h1>
+            
+        </div>
+    </div>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",calling)
+     listarr= JSON.parse(localStorage.getItem("Delivery")) || [];
+    
+     function calling(event){
+       event.preventDefault();
+
+        var first = document.querySelector("#firstname").value;
+       
+        var last =document.querySelector("#lastname").value;
+
+        var full = document.querySelector("#lastname").value;
+
+        var address1=document.querySelector("#addressline1").value;
+
+        var address2=document.querySelector("#addressline2").value;
+
+        var city = document.querySelector("#city").value;
+
+        var state =document.querySelector("#state").value;
+
+        var zip= document.querySelector("#zip").value;
+
+        var phone = document.querySelector("#phone").value;
+
+        var email = document.querySelector("#email").value;
+
+        // console.log(first,last,full,address1,address2,city,state,zip,phone,email)
+
+        var object={
+             first:first,
+             last:last,
+             full:full,
+             add1:address1,
+             add2:address2,
+             city:city,
+             state:state,
+             zip:zip,
+             phone:phone,
+             email:email
+        }
+
+      
+        // console.log(listarr)
+
+        if (first.length==0 || last.length==0 || full.length==0 || address1==0 || city==0 || state==0 || zip==0 || phone==0 || email==0 ){
+            alert("data are missing")
+        }
+        else{
+            listarr.push(object);
+            localStorage.setItem("Delivery",JSON.stringify(listarr));
+            window.location.href="nextcheck.html";
+        }
+      
+    }
+   
+    // getting data from sonthosh page
+
+
+    var addedarr=JSON.parse(localStorage.getItem("addedtocart"))
+
+//    console.log(addedarr)
+
+   var price =JSON.parse(localStorage.getItem("price"))
+
+//    console.log(typeof price)
+
+   var items=document.createElement("p")
+     items.textContent=addedarr.length+" "+"meals";
+   
+     document.querySelector(".items").append(items);
+    //  console.log(items)
+
+    var price1 = document.createElement("h4")
+      price1.textContent="$"+price;
+     
+      document.querySelector(".items").append(price1)
+    //   console.log(price1)
+    var price2 = document.createElement("h4")
+      price2.textContent="$"+price;
+      document.querySelector(".newchange").append(price2)
+
+    var calculated=document.createElement("h4")
+      calculated.textContent=("$"+(price+6.99+3.99));
+
+    //   console.log(calculated)
+
+      document.querySelector(".total").append(calculated)
+
+      
+     
+       addedarr.map(function(elem){
+            
+        var box=document.createElement("div")
+
+            var image=document.createElement("img");
+            image.setAttribute("src",elem.smallimage)
+         
+            var title=document.createElement("h5")
+            title.textContent=elem.name;
+
+            box.append(image,title)
+
+            document.querySelector(".box2").append(box)
+
+       })
+</script>
