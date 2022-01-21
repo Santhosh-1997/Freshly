@@ -114,6 +114,7 @@ function submitData(event) {
     }
     userData.push(obj);
     localStorage.setItem("UserData", JSON.stringify(userData))
+    window.location.href = "/plans/p.html"
 }
 
 document.querySelector("#form").addEventListener("submit", storeData)
@@ -131,4 +132,5 @@ function storeData(event) {
     userData.push(obj);
     console.log(obj);
     localStorage.setItem("UserData", JSON.stringify(userData))
+    window.location.href = "/plans/p.html"
 }
