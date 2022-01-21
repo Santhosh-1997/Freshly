@@ -29,15 +29,36 @@ body{
 /* NAVBAR SECTION  */
 
 nav{
+    /* height: 65px; */
+    margin-bottom: 10px;
+    height: auto;
+    position: sticky;
+    top: 0px;
+    left: 30px;
+    background-color: rgb(255, 253, 247);
+    padding: 10px 0px;
+    z-index: 100;
+    /* transition: all 5s ease-in-out;   */
+}
+nav >div{
     width: 96%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    /* justify-content: space-between; */
+    align-items: center;
+    
+ /* background-color: royalblue; */
+}
+#nav-menu{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-   
-    /* background-color: royalblue; */
+    
+    /* background-color: whitesmoke; */
 }
+
 nav img{
     width: 110px;
 }
@@ -56,15 +77,37 @@ nav .right>a:nth-child(2){
     color: white;
     padding: 9px 15px;
     font-size: 0.9em;
+    
 }
 nav a:hover{
     color:#096dea ;
+}
+nav .right>a:nth-child(2):hover{
+    /* position: relative; */
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 2px 2px #096dea;
+}
+.burger{
+    position: absolute;
+    top: 35px;
+    cursor: pointer;
+    display: none;
+    right: 5%;
+}
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
 }
 
 /* SECTION MAIN  */
 
 #main{
     background-color: #fef9ea;
+    z-index: -1;
+    width: 100%;
     /* background-color: red; */
     margin-top: 20px;
    height: 700px;
@@ -129,6 +172,25 @@ margin-top: 0px;
     color: white;
     background-color: #096dea;
 }
+#card1 button{
+    padding: 8px 15px;
+    position: relative;
+    top: 17px;
+    height: 35px;
+    border: none;
+    font-size: 1em;
+    color: white;
+    background-color: #096dea;
+    display: none;
+
+}
+#card1 #explore-meals:hover{
+    /* transition: all 6s ease-out; */
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 2px 2px #096dea;
+}
 #card1 .bottom-para{
     margin-top: 54px;
     font-size: 0.86em;
@@ -147,6 +209,7 @@ margin-top: 0px;
     position: absolute;
     right: 20px;
     bottom: 170px;
+    /* bottom: 467px; */
     margin-right: 20px;
     font-weight: bold;
     color:white;
@@ -160,6 +223,12 @@ margin-top: 0px;
     background-color: #096dea;
     color: white;
     padding: 10px;
+}
+#card2 >div >a:hover{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 1px #096dea;
 }
 
 
@@ -189,13 +258,15 @@ margin-top: 0px;
 
 /* MENU SECTION  */
 #menu{
-    background-image: url(https://media.istockphoto.com/photos/fresh-tomatoes-in-garden-picture-id603180270?b=1&k=20&m=603180270&s=170667a&w=0&h=JUIIQmSbHUH1w-UIBKU1SLB-4qwo-56un99SdV1P20c=);
+    background-image: url(https://assets-global.website-files.com/5d03b4e130118314af624b20/5d94e04ff2b857688f7138b6_home_image2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     padding: 40px 0px;
     margin: 60px 0px;
+    width: 100%;
+    margin-left: 0px;
 }
 #menu> #card{
     width: 50%;
@@ -248,6 +319,12 @@ margin-top: 0px;
     font-size: 1.5em;
     padding: 10px;
     margin-bottom: 20px;
+}
+#menu #card button:hover{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 1px #096dea;
 }
 
 /* PLAN SECTION  */
@@ -307,7 +384,62 @@ margin-top: 0px;
  padding: 15px;
  margin-top: 10px;
 }
+#plan #container button:hover{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 1px #096dea;
+}
 
+
+/* SECTION SAYING  */
+
+#saying {
+    width: 100%;
+    background-color: rgb(255, 253, 247);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 100px;
+}
+#saying .container{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 5fr 0.5fr;
+    align-items: center;
+    grid-gap: 20px;
+}
+#saying .container img{
+    width: 50px;
+    height: 50px;
+    padding: 30px;
+}
+#saying .container #jscontainer{
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 60px;
+}
+#saying .container #jscontainer img{
+    width: 50%;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+#saying .container #jscontainer h2{
+font-weight: 100;
+font-family: 'Varela Round', sans-serif;
+
+}
+#saying .container #jscontainer p{
+    font-family: 'Varela Round', sans-serif;
+    line-height: 22px;
+}
+#saying .container #jscontainer .b-size{
+    font-size: 1.3em;
+    font-weight: 200;
+}
 /* SECTION DETAILS  */
 
 #details{
@@ -349,9 +481,15 @@ margin-top: 0px;
     font-family: 'Varela Round', sans-serif;
     /* font-weight: bold; */
 }
+#details #container >div:nth-child(1) button:hover{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 1px #096dea;
+}
 
 #details #container >div:nth-child(2){
-    content: "";
+    /* content: ""; */
     background-image: url(https://media.istockphoto.com/photos/two-fresh-salad-bowls-picture-id919666108?b=1&k=20&m=919666108&s=170667a&w=0&h=7_YJbzzzL6mHDyiTZ-U34hQPZ4R_rHVHcCoLLaemye8=);
     position: absolute;
     right: 30px;
@@ -361,5 +499,147 @@ margin-top: 0px;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
+}
+
+
+/* START SECTION  */
+
+#start{
+    margin-top: 260px;
+    font-family: 'Roboto', sans-serif;
+}
+#start #container{
+    width: 90%;
+    height: 300px;
+    
+}
+#start #container  div:nth-child(1){
+    background-image: url(https://media.istockphoto.com/photos/pasta-kraft-brown-paper-carton-box-take-away-photography-picture-id1329984385?b=1&k=20&m=1329984385&s=170667a&w=0&h=9bixMleflueBbU5A7pog-Wt0NL1FKCGaAtCrcXGDjfc=);
+    position: absolute;
+    left: 30px;
+    height: 800px;
+    width: 1020px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    /* height: 400px; */
+    /* height: auto; */
+}
+#start #container  div:nth-child(2){
+    background-color: rgb(255, 253, 247);
+    width: 780px;
+    position: absolute;
+    right: 40px;
+    margin-right: 40px;
+    height: auto;
+    margin-top: 95px;
+    padding: 25px 40px;
+    box-sizing: border-box;
+}
+#start #container  div:nth-child(2) h1{
+    font-size: 3.4em;
+    opacity: 0.83;
+    margin-bottom: 15px;
+}
+#start #container  div:nth-child(2) form{
+display: flex;
+flex-wrap: wrap;
+}
+#start #container  div:nth-child(2) input{
+    width: 650px;
+    height: 45px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+#start #container  div:nth-child(2) #get-started{
+    background-color: #096dea;
+    color: white;
+    width: 500px;
+    font-size: 1.2em;
+}
+#start #container  div:nth-child(2) #get-started:hover{
+    position: relative;
+    bottom: 2px;
+    left: 2px;
+    box-shadow: 0px 0px 1px 1px #096dea;
+}
+#start #container  div:nth-child(2) p{
+    line-height: 10px;
+    font-family: 'Varela Round', sans-serif;
+}
+#start #container  div:nth-child(2) a{
+    color:#096dea ;
+}
+
+/* BOTTOM-BAR SECTION  */
+#bottom-bar{
+    margin-top: 200px;
+    margin-top: 500px;
+    background-color: rgba(238, 227, 227, 0.392);
+    /* background-color: red; */
+    border-bottom: 1px solid rgb(141, 136, 136);
+}
+
+#bottom-bar #container{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 30px;
+    grid-gap: 40px;
+    justify-content: space-around;
+   ;
+    align-items: center;
+}
+#bottom-bar #container img{
+    width: 100%;
+    padding: 30px;
+}
+
+/* FOOTER SECTION  */
+
+footer{
+    padding: 50px;
+    font-family: 'Varela Round', sans-serif;
+}
+footer a{
+    text-decoration: none;
+    color: #666;
+    margin: 10px 0px;
+    font-size: 0.9em;
+}
+footer img{
+    width: 55%;
+}
+footer #container{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    margin: auto;
+}
+footer #container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer #container > div > div{
+    display: flex;
+}
+footer #container > div > div img{
+    height: 20px;
+    width: 20px;
+    margin: 0px 5px;
+    opacity: 0.7;
+}
+footer #container .top{
+    font-size: 1.2em;
+    /* font-weight: bold; */
 }
 
