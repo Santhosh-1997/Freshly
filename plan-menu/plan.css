@@ -299,7 +299,7 @@ h3{
     }
     .a_question {
         width: 80%;
-        height: 50px;
+        height: auto;
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -309,6 +309,7 @@ h3{
         margin: auto;
         margin-top: -24px;
         color: blue;
+        margin-bottom: 20px;
     }
     .a_question  p{
         margin-top: 25px;
@@ -318,7 +319,7 @@ h3{
     }
     .a_answer {
         width: 80%;
-        height: 150px;
+        height: auto;
         margin: auto;
         display: none;
         font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;

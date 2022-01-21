@@ -29,6 +29,6 @@ function changePath(event) {
     userData.push(obj);
     alert("log in")
     localStorage.setItem("UserData", JSON.stringify(userData))
-    window.location.href = "/home-page/home.html"
+    window.location.href = "/plans/p.html"
     console.log(userData)
 }

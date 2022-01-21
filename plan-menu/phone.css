@@ -80,7 +80,7 @@
     .container1, .container2, .container, .layout{
         width: 95%;
         margin: auto;
-        background-color: red;
+        /* background-color: red; */
     }
     #widthchange>h2{
         font-size: 0.9em;
@@ -107,7 +107,9 @@
         margin-left: 10%;
         margin-top: 89px;
     }
-    
+    .a_question p{
+        margin-bottom: 50px;
+    }
 }
 @media screen and (max-width:150px){
 button{
@@ -116,6 +118,9 @@ button{
 }
 h1{
     font-size: 1.2em;
+}
+.a_answer p{
+    margin-top: 96px;
 }
 }
 
