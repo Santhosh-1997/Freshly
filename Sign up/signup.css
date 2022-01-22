@@ -7,6 +7,9 @@
     border-radius: 5px;
     justify-content: space-between;
 }
+img{
+    height: 50px;
+}
 .img{
     width: 15%;
     height: 20px;
@@ -36,7 +39,7 @@
 }
 .backimg{
    background-image: url("https://res.cloudinary.com/freshly/image/upload/c_crop,g_auto,dpr_auto,q_30,w_1942,h_900/v1494958610/joinnow-southchicken.jpg");
-   height: 690px;
+   height: 800px;
    width: 100%;
    background-repeat: no-repeat;
    background-position: center;
@@ -49,34 +52,39 @@
 }
 .box{
     width: 65%;
-    height: 500px;
+    height: auto;
+    padding-bottom: 20px;
     position: absolute;
     top: 29.5%;
-    
+/* margin: 100px auto; */
     left: 19%;
     background-color: rgb(240,238,233,0.8);           
 }
-h1{
-    font-size: 70px;
+.box img{
+    display: none;
+}
+.h1h1{
+    font-size: 3.2em;
     margin-left: 40px;
     font-family: 'Roboto', sans-serif;
 }
-h2{
-    font-size: 40px;
+.h2{
+    font-size: 2.3em;
     margin-left: 40px;
-    margin-right: 150px;
-    font-family:  FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Varela Round', sans-serif;
 }
 .detail{
-    display: flex;
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    grid-gap: 37px;
     margin-left: 40px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-right: 40px;
     margin-bottom: 40px;
 
 }
 .emailinput{
-    width: 320px;
+    width: 90%;
     height: 18px;
     background-color:white;
     border-radius: 5px;
@@ -88,7 +96,8 @@ h2{
     font-size: 20px;
 }
 .zipinput{
-    width: 120px;
+    /* width: 120px; */
+    width: 80%;
     background-color:white;
     border-radius: 5px;
     border: 2px solid gray;
@@ -96,7 +105,7 @@ h2{
 
 }
 .submit{
-    width: 150px;
+    width: 100%;
     background-color:rgba(34, 121, 221, 0.603) ;
     border: 0px;
     font-weight: bold;
@@ -106,22 +115,26 @@ h2{
 .submit:hover{
     background-color: rgb(42,109,255);
 }
-p{
+.ptag{
     margin-left: 40px;
-    font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
-    font-weight: bold;
+    /* margin-top: 0px; */
+    /* margin-top: 0px; */
+    font-family: 'Roboto', sans-serif;
 }
-.a{
+.atag{
     display:flex;
+    margin-top: -30px;
+    margin-bottom: -15px;
 }
 #a{
     margin-top: 15px;
     color: rgb(97,130,250);
-    font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
 .p {
     margin-top: 0px;
+    margin-left: 40px;
 }
 #logo{
     color: black;
@@ -139,3 +152,54 @@ p{
 .h1{
     margin: auto;
 }
+.layout{
+    width: 90%;
+    margin: auto;
+}
+.a{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.a_question:hover{
+  color:rgb(42,109,255);
+}
+.a_question {
+    width: 80%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    margin: auto;
+    margin-top: -24px;
+}
+.a:hover{
+    cursor: pointer;
+}
+.a_answer {
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    display: none;
+    font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;
+} 
+.a.active .a_answer {
+    display: block;
+}
+.hr{
+    width: 80%;
+    height: 0.1px;
+    color: rgb(212, 209, 209);;
+    border: none;
+    background-color: rgb(187, 184, 184);
+    border-radius: 0.5px;
+    margin-top: 30px;
+}
+.h1line{
+    text-align: center;
+    font-size: 50px;
+    font-family: FavoritFreshly,Helvetica Neue,Helvetica,Arial,sans-serif;;
+}  
