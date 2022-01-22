@@ -6,8 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Freshly-Login</title>
+    <link rel="shortcut icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn1o5IFvpm5Xk6fzi2cwiYT22tzY-UKMz1Dkyj31jj0jih97-7"
+        type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/login/phone.css">
     <style>
 
 
@@ -16,40 +23,48 @@
 
 <body>
 
-    <div class="nav">
+    <div class="nav ">
+        <div class="v-hidden h-nav" id="nav">
 
-        <div class="left">
-            <div><a href="">Plans $ Menu</a> </div>
-            <div><a href="https://www.freshly.com/why-freshly">About</a></div>
-            <div><a href="">For Business</a></div>
-            <div><a href="">Gifts</a></div>
+
+            <div class="left v-hidden">
+                <div><a href="/plan-menu/plan-menu.html">Plans & Menu</a> </div>
+                <div><a href="https://www.freshly.com/why-freshly">About</a></div>
+                <div><a href="">For Business</a></div>
+                <div><a href="">Gifts</a></div>
+            </div>
+            <div class="img" onclick="homePage()">
+                <a href="../home-page/home.html"><img
+                        src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                        alt="image"></a>
+            </div>
+            <div class="left v-hidden" id="right">
+                <div><a href="">Get $30</a></div>
+                <div><a href="">Help</a></div>
+                <div><a href="">Log in</a></div>
+                <a href="../Sign up/signup.html"> <button class="btn">Sign Up </button></a>
+
+            </div>
         </div>
-        <div class="img" onclick="homePage()">
-            <a href="../home-page/home.html"><img
-                    src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt="image"></a>
-        </div>
-        <div class="left">
-            <div><a href="">Get $30</a></div>
-            <div><a href="">Help</a></div>
-            <div><a href="">Log in</a></div>
-            <button class="btn" onclick="window.location.href='signup.html'">Sign Up </button>
-
-
+        <button class="btn  btn-r" onclick="window.location.href='signup/signup.html'">Sign Up </button>
+        <div class="burger" onclick="hidenNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
         </div>
     </div>
     <div id="box">
 
         <h1>Log In</h1>
         <p>Email</p>
-        <input type="text" placeholder="you2022@gmail.com" class="inp">
+        <input type="text" placeholder="you2022@gmail.com" class="inp email">
         <p>Password</p>
-        <input type="password" placeholder="enter password" class="inp">
+        <input type="password" placeholder="enter password" class="inp pass">
         <p></p>
         <input type="submit" class="submit" value="Log In">
         <div class="forgot">
             <a href="" class="pass">Forgot Password?</a>
-            <p>Don’t have an account?<a href="" class="pass">Get Started</a></p>
+            <p>Don’t have an account?<a href="../Sign up/signup.html" class="pass">Get Started</a></p>
 
         </div>
 
@@ -57,8 +72,9 @@
     <div id="box2">
         <div class="box3">
             <div class="bottompage">
-                <img src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
-                    alt="">
+                <a href="../home-page/home.html"><img
+                        src="https://assets-global.website-files.com/5d03b4e130118314af624b20/5fc4feea074f5b86a6c62285_freshly-logo-R.svg"
+                        alt=""></a>
                 <p class="btp">© Freshly Inc.</p>
 
             </div>
@@ -162,10 +178,6 @@
 
 
 </body>
+<script src="/login/log.js"></script>
 
 </html>
-<script>
-    function homePage() {
-        window.location.href = "home.html"
-    }
-</script>

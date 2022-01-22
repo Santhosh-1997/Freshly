@@ -1,3 +1,10 @@
+
+@media screen and (min-width:1091px) {
+    #card2 >div{
+        /* bottom: 500px; */
+        top: 600px;
+    }    
+}
 @media screen and (max-width:1090Px){
     #start #container{
         width: 100%;
@@ -37,7 +44,8 @@
         height: 72px;
     }
     #card2 >div{
-        bottom: 580px;
+        /* bottom: 500px; */
+        top: 600px;
     }
        #start #container  div:nth-child(1){
         background-image: url(https://media.istockphoto.com/photos/pasta-kraft-brown-paper-carton-box-take-away-photography-picture-id1329984385?b=1&k=20&m=1329984385&s=170667a&w=0&h=9bixMleflueBbU5A7pog-Wt0NL1FKCGaAtCrcXGDjfc=);
@@ -101,7 +109,8 @@
         font-size: 2.3em;
     }
     #card2  div{
-        bottom: 80px;
+        /* bottom: 500px; */
+        top: 600px;
       }
     /* #menu{ */
         /* margin-left: 25px; */
@@ -151,7 +160,8 @@
         /* margin: auto; */
     }
     #card2  div{
-      bottom: 0px;
+      /* bottom: 100px; */
+      top: 640px;
     }
     #work #container{
         grid-template-columns: repeat(1,1fr);
@@ -189,7 +199,8 @@
         font-size: 2.5em;
     }
     #card2 div{
-        bottom: 0px;
+        /* bottom: 120px; */
+        top: 640px;
     }
     #menu #card {
         width: 91%;
@@ -227,6 +238,10 @@
     }
     #bottom-bar #container img{
         padding: 0px;
+    }
+    nav #nav-menu a{
+        width: 150px;
+        margin-left: -200px;
     }
     nav .left img{
         margin-top: -308px;
@@ -268,5 +283,8 @@
 nav,#main,#work,#menu,#plan,#saying,#details,#start,#bottom-bar{
     width: 100%;
     margin: auto;
+}
+nav .left img{
+    margin-top: -279px;
 }
 }

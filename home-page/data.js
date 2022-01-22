@@ -96,3 +96,41 @@ burger.addEventListener("click", function () {
     right.classList.toggle("v-hidden")
     height.classList.toggle("h-nav")
 })
+
+document.querySelector("form").addEventListener("submit", submitData);
+
+var userData = JSON.parse(localStorage.getItem("UserData")) || []
+
+function submitData(event) {
+    event.preventDefault();
+    var email = document.querySelector("#email").value
+    var zip = document.querySelector("#code").value
+    // var pass = document.querySelector("#pass").value
+
+    var obj = {
+        Email: email,
+        Zip: zip,
+        // Pass: pass
+    }
+    userData.push(obj);
+    localStorage.setItem("UserData", JSON.stringify(userData))
+    window.location.href = "/plans/p.html"
+}
+
+document.querySelector("#form").addEventListener("submit", storeData)
+
+function storeData(event) {
+    event.preventDefault();
+    var email = document.querySelector("#mail").value
+    var zip = document.querySelector("#zip").value
+
+    var obj = {
+        Email: email,
+        Zip: zip,
+        // Pass: pass
+    }
+    userData.push(obj);
+    console.log(obj);
+    localStorage.setItem("UserData", JSON.stringify(userData))
+    window.location.href = "/plans/p.html"
+}

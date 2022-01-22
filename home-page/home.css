@@ -25,6 +25,12 @@ body{
     color: skyblue;
     border-bottom: 2px solid skyblue; 
 }
+#head span{
+    color: rgb(44, 221, 21);
+}
+#head #lgreen{
+    color: rgb(18, 58, 20);
+}
 
 /* NAVBAR SECTION  */
 
@@ -131,7 +137,7 @@ nav .right>a:nth-child(2):hover{
     /* align-items: center; */
 }
 #card1 >div{
-    margin-top: -100px;
+    margin-top: 0px;
 }
 #card1 h1{
     font-size: 4.2em;
