@@ -27,7 +27,7 @@ function changePath(event) {
         Pass: pass
     }
     userData.push(obj);
-    alert("log in")
+    alert("Sign in Successfully")
     localStorage.setItem("UserData", JSON.stringify(userData))
     window.location.href = "/plans/p.html"
     console.log(userData)

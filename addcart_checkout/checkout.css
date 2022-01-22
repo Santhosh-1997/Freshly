@@ -55,14 +55,15 @@
 }
 .mainitems {
    display: grid;
-   grid-template-columns: repeat(4,270px);
+   grid-template-columns: repeat(4,1fr);
    grid-gap: 20px;
    padding: 10px;
    padding-top: 20px;
    padding-right: 20px;
-   height: 550px;
-   overflow-y: scroll;
-   overflow-x: hidden;  
+   height: 1000px;
+   /* overflow-y: scroll; */
+   overflow: auto;
+   /* overflow-x: hidden;   */
     /* border: 5px solid blue ;    */
 }
 .afterhide {
@@ -296,7 +297,7 @@ h5{
    width: 100%;
    /* border: 1px solid teal; */
    display: flex;
-   
+   flex-wrap: wrap;
 }
 #hides{
    width: 22%;

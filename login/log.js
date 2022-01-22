@@ -23,7 +23,7 @@ function verifyData() {
         if (email == userData[i].Email && pass == userData[i].Pass) {
             alert("log in successful")
 
-            window.location.href = "/home-page/home.html"
+            window.location.href = "/plans/p.html"
         }
         else {
             count++;

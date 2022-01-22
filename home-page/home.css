@@ -25,6 +25,12 @@ body{
     color: skyblue;
     border-bottom: 2px solid skyblue; 
 }
+#head span{
+    color: rgb(44, 221, 21);
+}
+#head #lgreen{
+    color: rgb(18, 58, 20);
+}
 
 /* NAVBAR SECTION  */
 
