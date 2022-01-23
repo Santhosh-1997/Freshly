@@ -134,3 +134,7 @@ function storeData(event) {
     localStorage.setItem("UserData", JSON.stringify(userData))
     window.location.href = "/plans/p.html"
 }
+
+function planmenu(){
+    window.location.href="/plan-menu/plan-menu.html";
+}
