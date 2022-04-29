@@ -5,17 +5,17 @@ deployment Link:- https://clonefreshly.netlify.app/
 
 
 # Contributers :-
-Avinash
-Bhavesh
-Reshmi
-Sagar
-Santhosh
-Sunita
++ Avinash
++ Bhavesh
++ Reshmi
++ Sagar
++ Santhosh
++ Sunita
 
 # Tech Stack :-
-HTML
-CSS
-JavaScript
++ HTML
++ CSS
++ JavaScript
 
 # Pages & Features 👇
 Landing Page: Navbars, categories and footer section.
