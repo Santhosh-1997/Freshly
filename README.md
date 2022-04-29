@@ -25,3 +25,4 @@ Cart Page: User can add products to this page or remove products added in the ca
 Checkout Page: Users can add the delivery addresses.
 Payment Page: Users can add their payment details and also avail for discount using promo codes.
 
+User can sign up in signup page and with those credentials, user can login. In the products page, he can select items to order. He can filter the products. Once, he orders more than 5 items, he get discount for the order. Then, the user has to give the delivery address and finally it will be directed to payment page where user finishes the payment and finish the order.
