@@ -4,7 +4,7 @@ This is the clone of Freshly website. Clients can order food from the website. L
 deployment Link:- https://clonefreshly.netlify.app/
 
 
-# Contributers :-
+# Contributors :-
 + Avinash
 + Bhavesh
 + Reshmi
