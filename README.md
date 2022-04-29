@@ -3,6 +3,13 @@ This is the clone of Freshly website. Clients can order food from the website. L
 
 deployment Link:- https://clonefreshly.netlify.app/
 
+![1_xBZBRJlbk3ll910EM3AtlA](https://user-images.githubusercontent.com/97447945/165900459-98bd64e5-8f29-49ad-9437-5c2638d93fd8.png)
+
+![1_PxzxrOGlt0XBnBC1Cs_UIQ](https://user-images.githubusercontent.com/97447945/165900479-81352fb3-8cf3-47a8-93a7-7b3746fffeee.png)
+
+![1_9ub-pLQD5HMTR17gCX577A](https://user-images.githubusercontent.com/97447945/165900508-7a875c3d-5a59-4f84-8792-96b383a4ce41.png)
+
+![1_aSa1mGfx-bTUzPcHLmEAPw](https://user-images.githubusercontent.com/97447945/165900521-416b1c8b-4803-419f-98f1-966773acb330.png)
 
 # Contributors :-
 + Avinash
