@@ -14,7 +14,7 @@ deployment Link:- https://clonefreshly.netlify.app/
 # Contributors :-
 + Avinash
 + Bhavesh
-+ Reshmi
++ Rashmi
 + Sagar
 + Santhosh
 + Sunita
